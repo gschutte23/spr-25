@@ -1,0 +1,54 @@
+
+    import { Button } from "@/components/ui/button";
+    import { Card, CardContent } from "@/components/ui/card";
+    import { FaPaw } from "react-icons/fa";
+    import { motion } from "framer-motion";
+    
+
+    export default function HomePage() {
+      return (
+        <div className="min-h-screen bg-[#A7B89A] flex flex-col items-center p-6">
+          <motion.h1
+            className="text-4xl font-bold text-gray-800 mt-10 flex items-center gap-2"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <FaPaw className="text-[#5A6D57]" /> Sage Pet Sitting
+          </motion.h1>
+          
+          <p className="text-lg text-gray-700 mt-4 text-center max-w-2xl">
+            Reliable, loving care for your pets while you're away. Whether it's daily walks,
+            overnight stays, or just some extra love, we've got your furry friends covered.
+          </p>
+    
+          <div className="grid md:grid-cols-3 gap-6 mt-10">
+            <Card className="bg-white shadow-lg rounded-2xl p-6 text-center">
+              <CardContent>
+                <h2 className="text-xl font-semibold text-gray-800">Dog Walking</h2>
+                <p className="text-gray-600 mt-2">Daily or occasional walks tailored to your pup's needs.</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white shadow-lg rounded-2xl p-6 text-center">
+              <CardContent>
+                <h2 className="text-xl font-semibold text-gray-800">Overnight Care</h2>
+                <p className="text-gray-600 mt-2">Stay-in care for your pets in a comfortable environment.</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white shadow-lg rounded-2xl p-6 text-center">
+              <CardContent>
+                <h2 className="text-xl font-semibold text-gray-800">Drop-In Visits</h2>
+                <p className="text-gray-600 mt-2">Short visits for feeding, playtime, and companionship.</p>
+              </CardContent>
+            </Card>
+          </div>
+          
+          <Button className="mt-8 bg-[#5A6D57] text-white px-6 py-3 rounded-lg shadow-lg hover:bg-[#4A5D47]">
+            Contact Us
+          </Button>
+        </div>
+      );
+    }
+    
