@@ -55,6 +55,10 @@
       font-size: 20px;
     }
 
+    nav {
+      background-color: #0c1a46;
+      padding: 10px;
+    }
     a {
       color: white;
       text-decoration: none;
@@ -65,7 +69,16 @@
     }
   </style>
 </head>
-
+<nav>
+  <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
+  <div class="dropdown" id="menu">
+    <a href="menu.html">Home</a>
+    <a href="aboutthemaker.html">About the Maker</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="products.html">Products</a>
+    <a href="pricing.html">Pricing</a>
+  </div>
+</nav>
 <body>
   <div class="header">Vigilante LeatherWorks</div>
   <div class="container">
@@ -107,18 +120,7 @@
       <div><a href="#">REVIEWS</a></div>
     </div>
   </div>
-  <nav>
-    <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
-    <button onclick="toggleMenu()">Menu <span>➤</span></button>
-    <div class="dropdown" id="menu">
-      <!-- your home would be index.html, mine isn't because it is an example -->
-      <a href="menu.html">Home</a>
-      <a href="aboutthemaker.html">About the Maker</a>
-      <a href="contactus.html">Contact Us</a>
-      <a href="products.html">Products</a>
-      <a href="pricing.html">Pricing</a>
-    </div>
-  </nav>
+ 
 </body>
 
 </html>
