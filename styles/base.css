@@ -83,3 +83,32 @@ a:hover {
 .footer a:hover {
   text-decoration: underline;
 }
+product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background-color: #0c1a46;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  margin: 15px 0 10px;
+}
+
+.product-card p {
+  font-size: 16px;
+  line-height: 1.4;
+}
