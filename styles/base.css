@@ -1,65 +1,85 @@
-<style>
-/* navigation buttons */
-.nav_menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
-  background-color: #1c1c1c;
+body {
+  background-color: #d3c9bd;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  text-align: center;
 }
 
-.nav_menu li a {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  background-color: #5c4033;
+p {
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+.header {
+  background-color: #0c1a46;
+  color: #fff;
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.about {
+  background-color: #0c1a46;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.grid div {
+  background-color: #0c1a46;
+  color: #fff;
+  padding: 30px;
+  flex: 1;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+nav {
+  background-color: #0c1a46;
+  padding: 20px;
+}
+
+a {
   color: #fff;
   text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
 }
 
-.nav_menu li a:hover {
-  background-color: #a9745a;
+a:hover {
+  text-decoration: underline;
 }
 
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f2f0eb;
-  color: #333;
+.dropdown a {
+  margin: 0 15px;
 }
 
-.hero {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: linear-gradient(to bottom right, #fff8f0, #e7ded0);
+.footer {
+  background-color: #0c1a46;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 16px;
+  margin-top: 40px;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  color: #444;
+.footer a:hover {
+  text-decoration: underline;
 }
-
-.hero img {
-  margin-top: 2rem;
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-  background-color: #1c1c1c;
-  color: #f2f0eb;
-  text-align: center;
-  padding: 1rem;
-}
-</style>
