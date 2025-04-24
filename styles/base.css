@@ -66,7 +66,7 @@ a:hover {
   margin: 0 15px;
 }
 
-.footer {
+footer {
   background-color: #0c1a46;
   color: #fff;
   padding: 20px 0;
@@ -74,13 +74,13 @@ a:hover {
   margin-top: 40px;
 }
 
-.footer a {
+footer a {
   color: #fff;
   text-decoration: none;
   margin: 0 5px;
 }
 
-.footer a:hover {
+footer a:hover {
   text-decoration: underline;
 }
 
@@ -196,6 +196,7 @@ nav {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .aesthetic-row {
   display: flex;
   justify-content: center;
@@ -232,6 +233,7 @@ nav {
   text-transform: uppercase;
   line-height: 1.3;
 }
+
 .contact-info {
   background-color: #f4f4f4;
   padding: 20px;
@@ -286,12 +288,66 @@ form label {
   font-family: Georgia, serif;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   max-width: 600px;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 8px;
   font-family: Georgia, serif;
+}
 
- 
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  /* scrolling */
+}
+
+.table-container table {
+  width: 100%;
+  min-width: 20px;
+  border-collapse: collapse;
+}
+@media (max-width: 768px) {
+  nav .dropdown a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .contact-info p,
+  .shipping-info p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
