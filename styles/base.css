@@ -92,7 +92,7 @@ product-grid {
 
 .product-card {
   background-color: #0c1a46;
-  color: white;
+  color: rgb(15, 30, 172);
   border-radius: 8px;
   overflow: hidden;
   padding: 15px;
