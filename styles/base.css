@@ -23,6 +23,7 @@ p {
   width: 80%;
   margin: auto;
   padding: 20px;
+  /* inner spacing */
 }
 
 .about {
@@ -30,9 +31,11 @@ p {
   color: #fff;
   padding: 20px;
   border-radius: 8px;
+  /*rounds cornerr*/
   margin-bottom: 20px;
 }
 
+/* flexbox to lay out child elements in a row with spacing between them. */
 .grid {
   display: flex;
   justify-content: space-between;
@@ -44,6 +47,7 @@ p {
   color: #fff;
   padding: 30px;
   flex: 1;
+  /* Allows the grid items to grow and take up equal space within the grid container. */
   border-radius: 8px;
   font-size: 20px;
 }
@@ -84,15 +88,17 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* used to make sure it adjusts for responsivity */
 product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* ^Defines the columns to automatically fit based on the container’s width, with a minimum width of 250px per column. */
   gap: 30px;
 }
 
 .product-card {
   background-color: #0c1a46;
-  color: rgb(15, 30, 172);
+  color: #0c1a46;
   border-radius: 8px;
   overflow: hidden;
   padding: 15px;
@@ -102,11 +108,13 @@ product-grid {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  /* ^covers the full area of its container */
   border-radius: 4px;
 }
 
 .product-card h3 {
   margin: 15px 0 10px;
+  /* Adds 15px margin to the top and 10px margin to the bottom of <h3> elements in the product cards. */
 }
 
 .product-card p {
@@ -125,28 +133,30 @@ product-grid {
 table {
   width: 100%;
   border-collapse: collapse;
+  /* Makes table borders collapse into a single border rather than having space between them. */
   margin-top: 20px;
   font-size: 20px;
 }
 
 th,
 td {
+  /* Adds 15px of padding to both table headers (th) and table cells (td). */
   padding: 15px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #fff;
 }
 
 th {
   background-color: #0c1a46;
-  color: white;
+  color: #fff;
 }
 
 td {
   background-color: #1c2d5a;
-  color: white;
+  color: #fff;
 }
 
 a {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -165,14 +175,14 @@ nav {
 
 .footer {
   background-color: #0c1a46;
-  color: white;
+  color: #fff;
   padding: 20px 0;
   font-size: 16px;
   margin-top: 40px;
 }
 
 .footer a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   margin: 0 5px;
 }
@@ -194,7 +204,7 @@ nav {
   max-width: 400px;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px #000;
 }
 
 .aesthetic-row {
@@ -211,17 +221,12 @@ nav {
   max-width: 400px;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-}
-
-.aesthetic-row img:hover {
-  transform: scale(1.02);
+  box-shadow: 0 6px 12px #000;
 }
 
 .accent-block {
   background-color: #4e3629;
-  color: white;
+  color: #fff;
   font-family: Georgia, serif;
   padding: 30px 15px;
   border-radius: 12px;
@@ -229,7 +234,7 @@ nav {
   font-weight: bold;
   text-align: center;
   max-width: 100px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px #000;
   text-transform: uppercase;
   line-height: 1.3;
 }
@@ -257,7 +262,7 @@ nav {
 
 .shipping-info {
   background-color: #0c1a46;
-  color: white;
+  color: #fff;
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -274,7 +279,6 @@ nav {
   background-color: #f4f4f4;
   border: none;
   color: #333;
-  resize: none;
 }
 
 form {
@@ -309,7 +313,7 @@ form textarea {
   background-color: #fff;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px #000;
   text-align: center;
 }
 
@@ -330,6 +334,7 @@ form textarea {
   min-width: 20px;
   border-collapse: collapse;
 }
+
 @media (max-width: 768px) {
   nav .dropdown a {
     display: block;
@@ -350,4 +355,9 @@ form textarea {
     font-size: 16px;
     line-height: 1.5;
   }
+}
+
+ul {
+  list-style-position: outside;
+  padding-left: 40px;
 }
